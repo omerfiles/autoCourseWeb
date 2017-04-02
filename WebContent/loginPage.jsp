@@ -20,20 +20,24 @@
 	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.9/js/bootstrap-dialog.min.js"></script>
 </head>
 <body>
-	<div class="form-group">
-		<div>
-			<label>username</label><input id='username' type='text'
-				class='form-control'>
-		</div>
-		<div>
-			<label>password</label><input id='password' type='text'
-				class='form-control'>
+
+	<form action='./afterLogin.jsp' method='post'>
+
+		<div class="form-group">
+			<div class='col-xs-2'>
+				<label>username</label><input id='username'  name='username' type='text'
+					class='form-control'>
+			</div>
+			<div class='col-xs-2'>
+				<label>password</label><input id='password' name='password' type='text'
+					class='form-control'>
+			</div>
+
+			<div>
+				<button class='btn btn-primary'>submit</button>
+			</div>
 		</div>
 
-		<div>
-			<button class='btn btn-primary'>submit</button>
-		</div>
-	</div>
-
+	</form>
 </body>
 </html>
